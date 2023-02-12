@@ -13,6 +13,8 @@ please read extern/CMakeLists.txt for more.
 # Build
 
 ```bash
+git clone --recursive git@github.com:cathaysia/rmlui_externallib_example.git
+cd rmlui_externallib_example
 cmake -B build
 cmake --build build
 ```
