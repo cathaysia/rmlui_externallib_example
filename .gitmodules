@@ -1,0 +1,9 @@
+[submodule "extern/RmlUi"]
+	path = extern/RmlUi
+	url = https://github.com/cathaysia/RmlUi
+[submodule "extern/freetype"]
+	path = extern/freetype
+	url = https://github.com/freetype/freetype
+[submodule "extern/rlottie"]
+	path = extern/rlottie
+	url = https://github.com/Samsung/rlottie
