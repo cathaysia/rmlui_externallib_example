@@ -7,3 +7,6 @@
 [submodule "extern/rlottie"]
 	path = extern/rlottie
 	url = https://github.com/Samsung/rlottie
+[submodule "extern/lua"]
+	path = extern/lua
+	url = https://github.com/lua/lua
