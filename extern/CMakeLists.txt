@@ -1,3 +1,4 @@
+set(FT_DISABLE_HARFBUZZ ON CACHE BOOL "Disable freetype's huarbuzz depence")
 add_subdirectory(freetype)
 add_subdirectory(rlottie)
 
