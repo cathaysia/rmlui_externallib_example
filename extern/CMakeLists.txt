@@ -1,4 +1,10 @@
 set(FT_DISABLE_HARFBUZZ ON CACHE BOOL "Disable freetype's huarbuzz depence")
+set(FT_DISABLE_PNG ON CACHE BOOL "Disable support of PNG compressed OpenType embedded bitmaps.")
+set(FT_DISABLE_ZLIB ON CACHE BOOL "Disable use of system zlib and use internal zlib library instead.")
+set(FT_DISABLE_BZIP2 ON CACHE BOOL "Disable support of bzip2 compressed fonts.")
+set(FT_DISABLE_BROTLI ON CACHE BOOL "Disable support of compressed WOFF2 fonts.")
+
+
 add_subdirectory(freetype)
 add_subdirectory(rlottie)
 
@@ -10,7 +16,7 @@ set(BUILD_LUA_BINDINGS ON CACHE BOOL "Build Lua bindings")
 find_package(Lua REQUIRED)
 add_library(Lua_LIB INTERFACE)
 add_library(RmlUi_External::Lua ALIAS Lua_LIB)
-target_link_libraries(Lua_LIB INTERFACE ${LUA_LIBRARIES})
-target_include_directories(Lua_LIB INTERFACE ${LUA_INCLUDE_DIR})
+target_link_libraries(Lua_LIB INTERFACE lualib)
+target_include_directories(Lua_LIB INTERFACE ./lua)
 
 add_subdirectory(RmlUi)
