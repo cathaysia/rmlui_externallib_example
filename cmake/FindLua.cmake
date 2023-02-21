@@ -169,3 +169,4 @@ MACRO(LUA_ADD_EXECUTABLE luajit_target)
   add_executable(${luajit_target} ${target_srcs})
 ENDMACRO(LUA_ADD_EXECUTABLE luajit_target)
 
+set(Lua_FOUND ON)
