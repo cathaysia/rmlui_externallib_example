@@ -8,7 +8,6 @@ set(FT_DISABLE_BROTLI ON CACHE BOOL "Disable support of compressed WOFF2 fonts."
 add_subdirectory(freetype)
 add_subdirectory(rlottie)
 
-set(RMLUI_RLOTTIE_EXTERNAL ON CACHE BOOL "Use external RLOTTIE")
 set(RMLUI_LUA_EXTERNAL ON CACHE BOOL "Use external LUA, this ask RmlUi_External::Lua target be set")
 set(BUILD_LUA_BINDINGS ON CACHE BOOL "Build Lua bindings")
 
